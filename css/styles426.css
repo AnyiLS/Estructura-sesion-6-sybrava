@@ -1,0 +1,636 @@
+@import './variables.css';
+@import './classes.css';
+
+@font-face {
+	font-family: 'volta_modern_display_65_medium';
+	src: url('../fonts/volta_modern_display_65_medium.otf');
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.container .cover-image {
+	width: auto;
+	height: 100vh;
+}
+
+.chulo {
+	position: absolute;
+    width: 10%;
+    /* height: 21.6%; */
+    top: 40.8%;
+    right: 13.9%;
+}
+@media (max-width: 767px) {
+	input {
+		padding: 0px !important;
+	}
+}
+.chulo img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.reiniciar {
+	position: absolute;
+	width: 16.8%;
+	height: 9.8%;
+	left: 8.6%;
+	top: 80.7%;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.enviar {
+	position: absolute;
+	width: 17%;
+	height: 9.8%;
+	right: 6.1%;
+	top: 80.7%;
+	z-index: 10;
+	cursor: pointer;
+	border-radius: 34px;
+	background: #dfd9d978;
+}
+
+.buttom1 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 11.4%;
+    top: 33.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom2 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 16.4%;
+    top: 33.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom3 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 26.4%;
+    top: 33.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom5 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 31.4%;
+    top: 33.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom6 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 36.4%;
+    top: 33.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom7 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 41.4%;
+    top: 33.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom8 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 46.2%;
+    top: 33.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom9 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 11.3%;
+    top: 45.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom10 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 16.5%;
+    top: 45.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom11 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 21.5%;
+    top: 45.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom12 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 26.5%;
+    top: 45.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom13 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 36.5%;
+    top: 45.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom14 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 41.3%;
+    top: 45.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom15 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+    left: 51%;
+    top: 45.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom16 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+	left: 11.3%;
+    top: 58.1%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom17 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+	left: 21.6%;
+    top: 58.1%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom18 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+	left: 26.6%;
+    top: 58.1%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom19 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+	left: 31.4%;
+    top: 58.1%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom20 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+	left: 36.6%;
+    top: 58.1%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom21 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+	left: 41.4%;
+    top: 58.1%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom22 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+    border-radius: 21%;
+	left: 51%;
+    top: 58.1%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom23 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+	border-radius: 21%;
+	left: 55.7%;
+    top: 58.1%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom24 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+	border-radius: 21%;
+	left: 60.5%;
+    top: 58.1%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom25 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+	border-radius: 21%;
+    left: 11.2%;
+    top: 69.5%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom26 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+	border-radius: 21%;
+    left: 16.5%;
+    top: 69.5%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom27 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+	border-radius: 21%;
+    left: 23.5%;
+    top: 69.5%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom28 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+	border-radius: 21%;
+    left: 33.2%;
+    top: 69.5%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom29 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+	border-radius: 21%;
+	left: 38.1%;
+    top: 69.6%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom30 {
+	position: absolute;
+	width: 3.6%;
+    height: 8.2%;
+	border-radius: 21%;
+	left: 43.1%;
+    top: 69.6%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+
+
+@keyframes fullpart {
+	to {
+		height: 100%;
+	}
+
+	from {
+		height: 0px;
+	}
+}
+
+input {
+	text-transform: uppercase;
+}
+
+.boton-next {
+	position: absolute;
+	width: 5%;
+	right: 1%;
+	top: 46%;
+	cursor: pointer;
+}
+.boton-next img {
+	width: 100%;
+	height: 100%;
+}
+
+.boton-next1 {
+	position: absolute;
+	width: 5%;
+	right: 1%;
+	top: 48%;
+}
+.boton-next1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.boton-next2 {
+	position: absolute;
+	width: 5%;
+	right: 10%;
+	top: 48%;
+}
+.boton-next2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.boton-next6 {
+	position: absolute;
+	width: 5%;
+	right: 1%;
+	top: 86%;
+}
+.boton-next6 img {
+	width: 100%;
+	height: 100%;
+}
+
+.styled-input {
+	position: absolute;
+	width: 110%;
+	height: 107%;
+	border-radius: 21%;
+	left: -4.4%;
+	top: -3.3%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input1 {
+	position: absolute;
+	width: 110%;
+	height: 107%;
+	border-radius: 21%;
+	left: -4.4%;
+	top: -3.3%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input2 {
+	position: absolute;
+	width: 110%;
+	height: 107%;
+	border-radius: 21%;
+	left: -4.4%;
+	top: -3.3%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input3 {
+	position: absolute;
+	width: 110%;
+	height: 107%;
+	border-radius: 21%;
+	left: -4.4%;
+	top: -3.3%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input4 {
+	position: absolute;
+	width: 110%;
+	height: 107%;
+	border-radius: 21%;
+	left: -4.4%;
+	top: -3.3%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input5 {
+	position: absolute;
+	width: 110%;
+	height: 107%;
+	border-radius: 21%;
+	left: -4.4%;
+	top: -3.3%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input6 {
+	position: absolute;
+	width: 110%;
+	height: 107%;
+	border-radius: 21%;
+	left: -4.4%;
+	top: -3.3%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input7 {
+	position: absolute;
+	width: 110%;
+	height: 107%;
+	border-radius: 21%;
+	left: -4.4%;
+	top: -3.3%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+/* Responsive */
+@media (max-width: 1365px) and (min-height: 768px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (max-height: 767px) {
+	.container {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (min-height: 625px) and (max-height: 1280px) and (max-width: 1024px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+}
+
+@media (max-height: 624px) and (max-width: 767px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+
+	.styled-input {
+		width: 87%;
+		height: 93%;
+		left: -4.4%;
+		top: -2.3%;
+	}
+}

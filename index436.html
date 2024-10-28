@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Juego Sybrava 6</title>
+
+		<link rel="stylesheet" href="./css/styles436.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/portada436.jpg"
+				alt="Portada"
+				class="cover-image" />
+				<div id="valor"></div>
+
+			<div class="enviar" id="enviar"></div>
+		</div>
+
+		<!-- Scripts -->
+		<script>
+			$(document).ready(() => {
+				const quantity = localStorage.getItem('quantity')
+				$('#valor').text(quantity)
+				if (
+					$('.container').innerHeight() < $('.container').innerWidth()
+				) {
+					$('#valor').css(
+						'font-size',
+						$('.container').innerHeight() / 4.7
+					)
+				} else {
+					$('.quantity').css(
+						'font-size',
+						$('.container').innerHeight() / 12.7
+					)
+				}
+
+				$(window).on('resize', () => {
+					if (
+						$('.container').innerHeight() <
+						$('.container').innerWidth()
+					) {
+						$('#valor').css(
+							'font-size',
+							$('.container').innerHeight() / 4.7
+						)
+					} else {
+						$('.quantity').css(
+							'font-size',
+							$('.container').innerHeight() / 12.7
+						)
+					}
+				})
+
+				localStorage.setItem('respuestas', JSON.stringify([]))
+
+				$('#enviar').on('click', () => {
+					window.location.href = './index437.html'
+				})
+			})
+		</script>
+	</body>
+</html>

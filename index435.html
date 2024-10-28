@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Juego Sybrava 6</title>
+
+		<link rel="stylesheet" href="./css/styles435.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/portada435.jpg"
+				alt="Portada"
+				class="cover-image" />
+
+			<div id="valor"></div>
+			<div id="intentos"></div>
+			<div class="enviar" id="enviar"></div>
+		</div>
+
+		<!-- Scripts -->
+		<script>
+			$(document).ready(() => {
+				const quantity = localStorage.getItem('quantity'),
+					quantityIntentos = localStorage.getItem('intentos')
+
+				localStorage.setItem('intentos', parseInt(quantityIntentos) - 1)
+				localStorage.setItem('respuestas', JSON.stringify([]))
+				$('#valor').text(quantity)
+				$('#intentos').text(
+					`Te ${
+						parseInt(quantityIntentos) < 2 ? 'queda' : 'quedan'
+					} ${parseInt(quantityIntentos) - 1} ${
+						parseInt(quantityIntentos - 1) === 1
+							? 'intento'
+							: 'intentos'
+					}`
+				)
+
+				if (
+					$('.container').innerHeight() < $('.container').innerWidth()
+				) {
+					$('#valor').css(
+						'font-size',
+						$('.container').innerHeight() / 4.7
+					)
+					$('#intentos').css(
+						'font-size',
+						$('.container').innerHeight() / 18.7
+					)
+				} else {
+					$('.quantity').css(
+						'font-size',
+						$('.container').innerHeight() / 12.7
+					)
+					$('#intentos').css(
+						'font-size',
+						$('.container').innerHeight() / 18.7
+					)
+				}
+
+				$(window).on('resize', () => {
+					if (
+						$('.container').innerHeight() <
+						$('.container').innerWidth()
+					) {
+						$('#valor').css(
+							'font-size',
+							$('.container').innerHeight() / 4.7
+						)
+						$('#intentos').css(
+							'font-size',
+							$('.container').innerHeight() / 18.7
+						)
+					} else {
+						$('.quantity').css(
+							'font-size',
+							$('.container').innerHeight() / 12.7
+						)
+						$('#intentos').css(
+							'font-size',
+							$('.container').innerHeight() / 18.7
+						)
+					}
+				})
+
+				$('#enviar').on('click', () => {
+					if (parseInt(quantityIntentos - 1) === 0) {
+						window.location.href = './index.html'
+						localStorage.setItem('block', new Date())
+					} else {
+						window.location.href = './index422.html'
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

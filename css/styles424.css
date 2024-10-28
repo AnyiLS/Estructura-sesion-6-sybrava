@@ -1,0 +1,444 @@
+@import './variables.css';
+@import './classes.css';
+
+@font-face {
+	font-family: 'volta_modern_display_65_medium';
+	src: url('../fonts/volta_modern_display_65_medium.otf');
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.container .cover-image {
+	width: auto;
+	height: 100vh;
+}
+
+.reiniciar {
+	position: absolute;
+	width: 16.8%;
+	height: 9.8%;
+	left: 8.6%;
+	top: 80.7%;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.enviar {
+	position: absolute;
+	width: 16.8%;
+	height: 9%;
+    right: 6.1%;
+    top: 80.6%;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 34px;
+	background: #dfd9d978;
+}
+
+.enviar.disabled {
+    pointer-events: none; /* Hace que el botón no sea clickeable */
+    opacity: 0.5; /* Cambia la opacidad para mostrar que está deshabilitado */
+}
+
+.buttom1 {
+	position: absolute;
+	width: 5.6%;
+	height: 12.8%;
+	border-radius: 21%;
+	left: 8.6%;
+	top: 44.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom2 {
+	position: absolute;
+	width: 5.6%;
+	height: 12.8%;
+	border-radius: 21%;
+	left: 16%;
+	top: 44.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom3 {
+	position: absolute;
+	width: 5.6%;
+	height: 12.8%;
+	border-radius: 21%;
+	left: 23.3%;
+	top: 44.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom4 {
+	position: absolute;
+	width: 5.6%;
+	height: 12.8%;
+	border-radius: 21%;
+	left: 30.7%;
+	top: 44.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom5 {
+	position: absolute;
+	width: 5.6%;
+	height: 12.8%;
+	border-radius: 21%;
+	left: 38%;
+	top: 44.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom6 {
+	position: absolute;
+	width: 5.6%;
+	height: 12.8%;
+	border-radius: 21%;
+	left: 45.3%;
+	top: 44.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom7 {
+	position: absolute;
+	width: 5.6%;
+	height: 12.8%;
+	border-radius: 21%;
+	left: 52.7%;
+	top: 44.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom8 {
+	position: absolute;
+	width: 5.6%;
+	height: 12.8%;
+	border-radius: 21%;
+	left: 60%;
+	top: 44.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.buttom9 {
+	position: absolute;
+	width: 5.6%;
+	height: 12.8%;
+	border-radius: 21%;
+	left: 67.3%;
+	top: 44.7%;
+	z-index: 10;
+	border: 2.6px solid #3c7dae;
+}
+
+.chulo {
+	position: absolute;
+    width: 10%;
+    height: 17.6%;
+    top: 58.8%;
+    right: 8.9%;
+}
+
+.chulo img {
+	width: 100%;
+	height: 100%;
+}
+
+.letra1 {
+	position: absolute;
+	font-size: 400%;
+	left: 13%;
+	color: #02216a;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+@keyframes fullpart {
+	to {
+		height: 100%;
+	}
+
+	from {
+		height: 0px;
+	}
+}
+
+input {
+	text-transform: uppercase;
+}
+
+.styled-input {
+	position: absolute;
+	width: 4.1%;
+    height: 9.2%;
+    border-radius: 21%;
+    left: 8.5%;
+    top: 46.9%;
+	z-index: 10;
+	border: 2px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+@media (max-width: 767px) {
+	input {
+		padding: 0px !important;
+	}
+}
+
+.styled-input1 {
+	position: absolute;
+	width: 4.1%;
+    height: 9.2%;
+    border-radius: 21%;
+    left: 18.4%;
+    top: 47%;
+	z-index: 10;
+	border: 2px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input2 {
+	position: absolute;
+	width: 4.1%;
+    height: 9.2%;
+    border-radius: 21%;
+    left: 28.2%;
+    top: 47%;
+	z-index: 10;
+	border: 2px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input3 {
+	position: absolute;
+	width: 4.1%;
+    height: 9.2%;
+    border-radius: 21%;
+    left: 38%;
+    top: 47%;
+	z-index: 10;
+	border: 2px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input4 {
+	position: absolute;
+	width: 4.1%;
+    height: 9.2%;
+    border-radius: 21%;
+    left: 43.2%;
+    top: 47%;
+	z-index: 10;
+	border: 2px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input5 {
+	position: absolute;
+	width: 4.1%;
+    height: 9.2%;
+    border-radius: 21%;
+    left: 48%;
+    top: 47%;
+	z-index: 10;
+	border: 2px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input6 {
+	position: absolute;
+	width: 4.1%;
+    height: 9.2%;
+    border-radius: 21%;
+    left: 57.6%;
+    top: 47%;
+	z-index: 10;
+	border: 2px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input7 {
+	position: absolute;
+	width: 4.1%;
+    height: 9.2%;
+    border-radius: 21%;
+    left: 62.4%;
+    top: 47%;
+	z-index: 10;
+	border: 2px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input8 {
+	position: absolute;
+	width: 4.1%;
+    height: 9.2%;
+    border-radius: 21%;
+    left: 72.4%;
+    top: 47%;
+	z-index: 10;
+	border: 2px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input9 {
+	position: absolute;
+	width: 4.1%;
+    height: 9.2%;
+    border-radius: 21%;
+    left: 77.5%;
+    top: 47%;
+	z-index: 10;
+	border: 2px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input10 {
+	position: absolute;
+	width: 4.1%;
+    height: 9.2%;
+    border-radius: 21%;
+    left: 82.2%;
+    top: 47%;
+	z-index: 10;
+	border: 2px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+.styled-input11 {
+	position: absolute;
+	width: 4.1%;
+    height: 9.2%;
+    border-radius: 21%;
+    left: 91.7%;
+    top: 47%;
+	z-index: 10;
+	border: 2px solid #3c7dae;
+	padding: 5px;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 400%;
+	color: #5bc52e;
+	font-family: 'volta_modern_display_65_medium';
+}
+
+/* Responsive */
+@media (max-width: 1365px) and (min-height: 768px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (max-height: 767px) {
+	.container {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (min-height: 625px) and (max-height: 1280px) and (max-width: 1024px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+}
+
+@media (max-height: 624px) and (max-width: 767px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+}

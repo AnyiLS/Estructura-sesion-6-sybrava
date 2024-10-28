@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Juego Sybrava 6</title>
+
+		<link rel="stylesheet" href="./css/styles425.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/alerta-mala.webp"
+				alt="Portada"
+				class="cover-image" />
+
+			<div class="enviar" id="enviar"></div>
+
+			<!-- Chulo alerta bien -->
+			<div class="chulo">
+				<img src="./imagenes/boton-mala.png" alt="" />
+			</div>
+
+			<!-- alertas -->
+			<div class="alertas1" id="boton-mala1">
+				<img
+					src="./imagenes/alerta1.png"
+					alt=""
+					style="display: block" />
+			</div>
+
+			<div class="alertas2" id="boton-mala2">
+				<img
+					src="./imagenes/alerta2.png"
+					alt=""
+					style="display: none" />
+			</div>
+
+			<div class="alertas3" id="boton-mala3">
+				<img
+					src="./imagenes/alerta3.png"
+					alt=""
+					style="display: none" />
+			</div>
+
+			<div class="alertas4" id="boton-mala4">
+				<img
+					src="./imagenes/alerta4.png"
+					alt=""
+					style="display: none" />
+			</div>
+
+			<div class="alertas5" id="boton-mala5">
+				<img
+					src="./imagenes/alerta5.png"
+					alt=""
+					style="display: none" />
+			</div>
+
+			<div class="alertas6" id="boton-mala6">
+				<img
+					src="./imagenes/alerta6.png"
+					alt=""
+					style="display: none" />
+			</div>
+
+			<div class="alertas7" id="boton-mala7">
+				<img
+					src="./imagenes/alerta7.png"
+					alt=""
+					style="display: none" />
+			</div>
+
+			<div class="alertas8" id="boton-mala8">
+				<img
+					src="./imagenes/alerta8.png"
+					alt=""
+					style="display: none" />
+			</div>
+
+			<div class="alertas9" id="boton-mala9">
+				<img
+					src="./imagenes/alerta9.png"
+					alt=""
+					style="display: none" />
+			</div>
+
+			<div class="alertas10" id="boton-mala10">
+				<img
+					src="./imagenes/alerta10.png"
+					alt=""
+					style="display: none" />
+			</div>
+
+			<div class="alertas11" id="boton-mala11">
+				<img
+					src="./imagenes/alerta11.png"
+					alt=""
+					style="display: none" />
+			</div>
+
+			<div class="alertas12" id="boton-mala12">
+				<img
+					src="./imagenes/alerta12.png"
+					alt=""
+					style="display: none" />
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="./js/scripts114.js"></script>
+		<script>
+			$(document).ready(() => {
+				const error = localStorage.getItem('error')
+
+				const redirections = {
+					1: './index426.html',
+					2: './index427.html',
+					3: './index428.html',
+					4: './index429.html',
+					5: './index430.html',
+					6: './index431.html',
+					7: './index432.html',
+					8: './index433.html',
+					9: './index434.html',
+					10: './index435.html',
+				}
+
+				$('#enviar').on('click', () => {
+					if (parseInt(error) === 10) {
+						const responses = JSON.parse(localStorage.getItem('respuestas'));
+						localStorage.setItem('quantity', responses.length);
+						
+						if (responses.length > 9) window.location.href = './index436.html'
+						else window.location.href = './index435.html'
+					} else window.location.href = redirections[error]
+				})
+
+				for (let i = 0; i < 10; i++) {
+					if (i + 1 === parseInt(error)) {
+						$(`#boton-mala${i + 1}`).css('display', 'block')
+						$(`#boton-mala${i + 1} img`).css('display', 'block')
+					} else {
+						$(`#boton-mala${i + 1}`).css('display', 'none')
+						$(`#boton-mala${i + 1} img`).css('display', 'none')
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

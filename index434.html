@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Juego Sybrava 6</title>
+
+		<link rel="stylesheet" href="./css/styles434.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/portada434.jpg"
+				alt="Portada"
+				class="cover-image" />
+
+			<div class="reiniciar" id="open-reiniciar"></div>
+			<div class="enviar disable" id="open-enviar"></div>
+
+			<!-- buttons -->
+
+			<input type="text" class="styled-input1" maxlength="1" id="input1" />
+
+			<input type="text" class="styled-input2" maxlength="1" id="input2" />
+
+			<input type="text" class="styled-input3" maxlength="1" id="input3" />
+
+			
+
+			<!-- Chulo alerta bien -->
+			<div class="chulo" style="display: none">
+				<img src="./imagenes/chulo-bien.png" alt="" />
+			</div>
+
+			<!-- Reproductor de audio -->
+			<audio
+				id="input-sound"
+				src="imagenes/sonido/tecla.mp3"
+				preload="auto"></audio>
+		</div>
+
+		<!-- Scripts -->
+		<script src="./js/scripts434.js"></script>
+		<script>
+			const respuestas = JSON.parse(localStorage.getItem('respuestas'))
+			if (!respuestas) {
+				localStorage.setItem('respuestas', JSON.stringify([]))
+			}
+
+			$(document).ready(() => {
+				if (
+					$('.container').innerHeight() < $('.container').innerWidth()
+				) {
+					$('input').css(
+						'font-size',
+						$('.container').innerHeight() / 10.7
+					)
+				} else {
+					$('input').css(
+						'font-size',
+						$('.container').innerHeight() / 12.7
+					)
+				}
+
+				$(window).on('resize', () => {
+					if (
+						$('.container').innerHeight() <
+						$('.container').innerWidth()
+					) {
+						$('input').css(
+							'font-size',
+							$('.container').innerHeight() / 10.7
+						)
+					} else {
+						$('input').css(
+							'font-size',
+							$('.container').innerHeight() / 12.7
+						)
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

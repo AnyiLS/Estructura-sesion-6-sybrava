@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Juego Sybrava 6</title>
+
+		<link rel="stylesheet" href="./css/styles422.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/portada422.jpg"
+				alt="Portada"
+				class="cover-image" />
+
+			<img
+				src="./imagenes/flecha.png"
+				alt=""
+				class="start-button"
+				style="cursor: pointer" />
+		</div>
+
+		<!-- Scripts -->
+		<script>
+			$(document).ready(() => {
+				const intentos = localStorage.getItem('intentos'),
+					block = localStorage.getItem('block')
+
+				if (block) {
+					if (new Date(block).getDay() + 1 > new Date()) {
+						localStorage.setItem('intentos', 3)
+						$('.start-button').on('click', () => {
+							window.location.href = './index423.html'
+						})
+					}
+				} else {
+					if (!intentos) {
+						localStorage.setItem('intentos', 3)
+						$('.start-button').on('click', () => {
+							window.location.href = './index423.html'
+						})
+					} else {
+						$('.start-button').on('click', () => {
+							window.location.href = './index423.html'
+						})
+					}
+				}
+			})
+		</script>
+	</body>
+</html>

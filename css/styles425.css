@@ -1,0 +1,311 @@
+@import './variables.css';
+@import './classes.css';
+
+body {
+	margin: 0;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+}
+@media (max-width: 767px) {
+	input {
+		padding: 0px !important;
+	}
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.container .cover-image {
+	width: auto;
+	height: 100vh;
+}
+
+.reiniciar {
+	position: absolute;
+	width: 16.8%;
+	height: 9.8%;
+	left: 8.6%;
+	top: 80.7%;
+	z-index: 10;
+	cursor: pointer;
+	cursor: pointer;
+}
+
+.enviar {
+	position: absolute;
+	width: 16.8%;
+	height: 9.8%;
+	right: 6.1%;
+	top: 80.7%;
+	z-index: 10;
+	cursor: pointer;
+	cursor: pointer;
+}
+
+.chulo {
+	position: absolute;
+	width: 12.5%;
+	height: 21.6%;
+	top: 14.8%;
+	left: 8.9%;
+}
+
+.chulo img {
+	width: 100%;
+	height: 100%;
+}
+
+.alertas1 {
+	position: absolute;
+	width: 70.3%;
+    height: 40%;
+    top: 25.8%;
+    left: 16.4%;
+}
+
+.alertas1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.alertas2 {
+	position: absolute;
+	width: 62.3%;
+	height: 43.7%;
+	top: 25.8%;
+	left: 18.9%;
+}
+
+.alertas2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.alertas3 {
+	position: absolute;
+	width: 72.3%;
+    height: 37.4%;
+    top: 27.8%;
+    left: 14.9%;
+}
+
+.alertas3 img {
+	width: 100%;
+	height: 100%;
+}
+
+.alertas4 {
+	position: absolute;
+    width: 66.7%;
+    height: 45.6%;
+    top: 27.8%;
+    left: 15.2%;
+}
+
+.alertas4 img {
+	width: 100%;
+	height: 100%;
+}
+
+.alertas5 {
+	position: absolute;
+	width: 70.4%;
+    height: 31.1%;
+    top: 31.8%;
+    left: 14.7%;
+}
+
+.alertas5 img {
+	width: 100%;
+	height: 100%;
+}
+
+.alertas6 {
+	position: absolute;
+	width: 69.2%;
+    top: 26%;
+    left: 14.5%;
+}
+
+.alertas6 img {
+	width: 100%;
+	height: 100%;
+}
+
+.alertas7 {
+	position: absolute;
+	width: 69.8%;
+	top: 26%;
+	left: 15.1%;
+}
+
+.alertas7 img {
+	width: 100%;
+	height: 100%;
+}
+
+.alertas8 {
+	position: absolute;
+	width: 72.5%;
+    top: 24.9%;
+    left: 14.3%;
+}
+
+.alertas8 img {
+	width: 100%;
+	height: 100%;
+}
+
+.alertas9 {
+	position: absolute;
+	width: 69.8%;
+	top: 26.1%;
+	left: 15.1%;
+}
+
+.alertas9 img {
+	width: 100%;
+	height: 100%;
+}
+
+.alertas10 {
+	position: absolute;
+	width: 75.1%;
+	top: 26.1%;
+	left: 12.5%;
+}
+
+.alertas10 img {
+	width: 100%;
+	height: 100%;
+}
+
+.alertas11 {
+	position: absolute;
+	width: 75.1%;
+	top: 26.1%;
+	left: 12.5%;
+}
+
+.alertas11 img {
+	width: 100%;
+	height: 100%;
+}
+
+.alertas12 {
+	position: absolute;
+	width: 70.4%;
+	top: 25.9%;
+	left: 14.7%;
+}
+
+.alertas12 img {
+	width: 100%;
+	height: 100%;
+}
+
+@keyframes fullpart {
+	to {
+		height: 100%;
+	}
+
+	from {
+		height: 0px;
+	}
+}
+
+.boton-next {
+	position: absolute;
+	width: 5%;
+	right: 1%;
+	top: 46%;
+	cursor: pointer;
+}
+.boton-next img {
+	width: 100%;
+	height: 100%;
+}
+
+.boton-next1 {
+	position: absolute;
+	width: 5%;
+	right: 1%;
+	top: 48%;
+}
+.boton-next1 img {
+	width: 100%;
+	height: 100%;
+}
+
+.boton-next2 {
+	position: absolute;
+	width: 5%;
+	right: 10%;
+	top: 48%;
+}
+.boton-next2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.boton-next6 {
+	position: absolute;
+	width: 5%;
+	right: 1%;
+	top: 86%;
+}
+.boton-next6 img {
+	width: 100%;
+	height: 100%;
+}
+/* Responsive */
+@media (max-width: 1365px) and (min-height: 768px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (max-height: 767px) {
+	.container {
+		width: auto;
+		height: 100vh;
+	}
+}
+
+@media (min-height: 625px) and (max-height: 1280px) and (max-width: 1024px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+}
+
+@media (max-height: 624px) and (max-width: 767px) {
+	.container {
+		width: 100vw;
+		height: auto;
+	}
+
+	.container .cover-image {
+		width: 100vw;
+		height: auto;
+	}
+}

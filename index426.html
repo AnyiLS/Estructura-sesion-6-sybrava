@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Juego Sybrava 6</title>
+
+		<link rel="stylesheet" href="./css/styles426.css" />
+		<!-- Scripts -->
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/functions.js"></script>
+	</head>
+	<body class="ancho">
+		<div class="container">
+			<img
+				src="./imagenes/portada426.webp"
+				alt="Portada"
+				class="cover-image" />
+
+			<div class="reiniciar" id="open-reiniciar"></div>
+			<div class="enviar" id="open-enviar"></div>
+
+			<!-- buttons -->
+			<div class="buttom1">
+				<input
+					type="text"
+					class="styled-input"
+					maxlength="1"
+					id="input1" />
+			</div>
+			<div class="buttom2">
+				<input
+					type="text"
+					class="styled-input1"
+					maxlength="1"
+					id="input2" />
+			</div>
+			<div class="buttom3">
+				<input
+					type="text"
+					class="styled-input2"
+					maxlength="1"
+					id="input3" />
+			</div>
+			<div class="buttom5">
+				<input
+					type="text"
+					class="styled-input4"
+					maxlength="1"
+					id="input4" />
+			</div>
+			<div class="buttom6">
+				<input
+					type="text"
+					class="styled-input5"
+					maxlength="1"
+					id="input5" />
+			</div>
+			<div class="buttom7">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input6" />
+			</div>
+			<div class="buttom8">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input7" />
+			</div>
+
+			<div class="buttom9">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input8" />
+			</div>
+			<div class="buttom10">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input9" />
+			</div>
+			<div class="buttom11">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input10" />
+			</div>
+			<div class="buttom12">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input11" />
+			</div>
+			<div class="buttom13">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input12" />
+			</div>
+			<div class="buttom14">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input13" />
+			</div>
+			<div class="buttom15">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input14" />
+			</div>
+			<div class="buttom16">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input15" />
+			</div>
+			<div class="buttom17">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input16" />
+			</div>
+			<div class="buttom18">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input17" />
+			</div>
+			<div class="buttom19">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input18" />
+			</div>
+			<div class="buttom20">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input19" />
+			</div>
+			<div class="buttom21">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input20" />
+			</div>
+			<div class="buttom22">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input21" />
+			</div>
+			<div class="buttom23">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input22" />
+			</div>
+			<div class="buttom24">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input23" />
+			</div>
+			<div class="buttom25">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input24" />
+			</div>
+			<div class="buttom26">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input25" />
+			</div>
+			<div class="buttom27">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input26" />
+			</div>
+			<div class="buttom28">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input27" />
+			</div>
+			<div class="buttom29">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input28" />
+			</div>
+			<div class="buttom30">
+				<input
+					type="text"
+					class="styled-input6"
+					maxlength="1"
+					id="input29" />
+			</div>
+
+			<!-- Reproductor de audio -->
+			<audio
+				id="input-sound"
+				src="imagenes/sonido/tecla.mp3"
+				preload="auto"></audio>
+		</div>
+
+		<!-- Chulo alerta bien -->
+		<div class="chulo" style="display: none">
+			<img src="./imagenes/chulo-bien.png" alt="" />
+		</div>
+
+		<!-- Scripts -->
+		<script src="./js/scripts426.js"></script>
+		<script>
+			const respuestas = JSON.parse(localStorage.getItem('respuestas'))
+			if (!respuestas) {
+				localStorage.setItem('respuestas', JSON.stringify([]))
+			}
+
+			$(document).ready(() => {
+				if (
+					$('.container').innerHeight() < $('.container').innerWidth()
+				) {
+					$('input').css(
+						'font-size',
+						$('.container').innerHeight() / 18.5
+					)
+				} else {
+					$('input').css(
+						'font-size',
+						$('.container').innerHeight() / 12.7
+					)
+				}
+
+				$(window).on('resize', () => {
+					if (
+						$('.container').innerHeight() <
+						$('.container').innerWidth()
+					) {
+						$('input').css(
+							'font-size',
+							$('.container').innerHeight() / 18.5
+						)
+					} else {
+						$('input').css(
+							'font-size',
+							$('.container').innerHeight() / 12.7
+						)
+					}
+				})
+			})
+		</script>
+	</body>
+</html>
